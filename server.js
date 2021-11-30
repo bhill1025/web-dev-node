@@ -1,3 +1,5 @@
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/webdev');
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -19,5 +21,7 @@ app.get('/hello', (req, res) => {
 require('./services/movies-service')(app);
 
 require('./services/tweeter-service')(app);
+
+require('./movies/service')(app);
 
 app.listen(process.env.PORT || 4000);
