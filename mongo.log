@@ -51,3 +51,20 @@ WriteResult({ "nInserted" : 1 })
 { "_id" : ObjectId("61a6267b3733f17ecd809eb8"), "title" : "Terminator", "rating" : 4.8 }
 { "_id" : ObjectId("61a626b53733f17ecd809eb9"), "title" : "Avatar", "rating" : 4.9 }
 { "_id" : ObjectId("61a626c33733f17ecd809eba"), "title" : "Dune", "rating" : 4.9 }
+
+> db.tweets.insert({"topic": "Web Development","userName": "ReactJS","verified": false,"handle": "ReactJS","time": "2h","title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs","tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.","attachments": {"video": "unKvMC3Y1kI"},"logo-image": "../../../images/react-blue.png","avatar-image": "../../../images/react-blue.png","stats": {"comments": 123,"retweets": 234,"likes": 345}});
+WriteResult({ "nInserted" : 1 })
+
+Exports:::
+Practice -
+
+[{"_id":"61a626b53733f17ecd809eb9","title":"Avatar 2","rating":4.9},
+{"_id":"61a626c33733f17ecd809eba","title":"Dune 2","rating":4.9},
+{"_id":"61a6335c0496ee5244b31d24","title":"Hello Movie","__v":0}]
+
+Build -
+
+[{"attachments":{"video":"unKvMC3Y1kI"},"stats":{"comments":123,"retweets":234,"likes":344},"_id":"61a64717ef0ef70a664a7695","topic":"Web Development","userName":"ReactJS","verified":false,"handle":"ReactJS","time":"hello","title":"React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs","tweet":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.","logo-image":"/images/react.png","avatar-image":"/images/react.png","liked":true},
+{"stats":{"comments":123,"retweets":234,"likes":346},"_id":"61a6551317f5185c8d2677ed","topic":"Web Development","userName":"ReactJS","verified":false,"handle":"ReactJS","tweet":"Hello","time":"2h","logo-image":"/images/me.jpg","avatar-image":"/images/me.jpg","liked":true,"__v":0},
+{"stats":{"comments":123,"retweets":234,"likes":345},"_id":"61a6551317f5185c8d2677ef","topic":"Web Development","userName":"ReactJS","verified":false,"handle":"ReactJS","tweet":"Hello","time":"2h","logo-image":"/images/me.jpg","avatar-image":"/images/me.jpg","liked":false,"__v":0},
+{"stats":{"comments":123,"retweets":234,"likes":345},"_id":"61a6571f5d46d3eed831ac04","topic":"Web Development","userName":"ReactJS","verified":false,"handle":"ReactJS","tweet":"Yo","time":"2h","logo-image":"/images/me.jpg","avatar-image":"/images/me.jpg","liked":false,"createdAt":"2021-11-30T16:53:51.014Z","updatedAt":"2021-11-30T16:53:51.014Z","__v":0}]
